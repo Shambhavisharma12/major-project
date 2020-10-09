@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { SignupComponent } from 'src/app/signup/signup.component'
 
 @Component({
   selector: 'app-owner',
@@ -8,6 +10,7 @@ import { Component, OnInit } from '@angular/core';
 export class OwnerComponent implements OnInit {
 
   constructor() { }
+  
 
   ngOnInit(): void {
   }

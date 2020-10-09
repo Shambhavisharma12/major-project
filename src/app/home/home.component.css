@@ -1,0 +1,50 @@
+.row-header {
+    margin: 155px;
+    padding: 0px 0px;
+    
+    
+        
+}
+    .image{
+        background: url('/assets/images/photo-1533473359331-0135ef1b58bf.jpg');
+         background-repeat: no-repeat; 
+         background-size: cover;
+         background-position: center;
+        
+        
+      }
+    .view {
+        height: 100%;
+      }
+    .forbold{
+        text-shadow: black;
+        font-weight: 500;
+    }
+
+    .head{
+        background-color: #2e3951;
+    }
+
+    .serif {
+        font-family: Times, serif;
+    }
+    .text{
+        color:grey;
+
+      }
+      .font{
+        font-weight: bolder !important;
+      }
+
+      .car{
+          font-size: 400%;
+      }
+      .backcolor{
+          background-color:lightgrey;
+      }
+      .margin{
+          margin-top: 0px;
+      }
+      .heading1{
+          margin-top: 15px;;
+      }
