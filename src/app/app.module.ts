@@ -7,6 +7,9 @@ import { OwnerComponent } from './owner/owner.component';
 import { CustomerComponent } from './customer/customer.component';
 import { SignupComponent } from './signup/signup.component';
 import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './login/login.component';
+import { AfterloginhomeComponent } from './afterloginhome/afterloginhome.component';
+
 
 @NgModule({
   declarations: [
@@ -14,11 +17,15 @@ import { HomeComponent } from './home/home.component';
     OwnerComponent,
     CustomerComponent,
     SignupComponent,
-    HomeComponent
+    HomeComponent,
+    LoginComponent,
+    AfterloginhomeComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
