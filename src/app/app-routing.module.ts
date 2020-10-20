@@ -3,12 +3,16 @@ import { Routes, RouterModule } from '@angular/router';
 import { SignupComponent } from 'src/app/signup/signup.component'
 import { CommonModule } from '@angular/common';
 import { AppComponent } from './app.component';
+import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { AfterloginhomeComponent } from './afterloginhome/afterloginhome.component';
 
+import { RegistrationComponent } from './registration/registration.component'
+
 
 const routes: Routes = [
-  { path: 'signup',  component: SignupComponent },
+  { path: 'formsignup',  component: SignupComponent },
+  { path : 'regist' , component : RegistrationComponent},
   { path : 'home' , component : HomeComponent},
   {  path: '', redirectTo: '/home', pathMatch: 'full'},
   {

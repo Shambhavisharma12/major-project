@@ -1,0 +1,29 @@
+input.ng-touched.ng-invalid{
+    border: 2px solid rgb(252, 40, 40);
+}
+.textarea {
+    width: 260px;
+    height: 15em;
+    }
+.size{
+    width: 260px;
+}
+.forform {
+
+    padding-top: 25px;
+  }
+.imagecar{
+    background: url("/assets/photo-1542282088-fe8426682b8f.jpg");
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: center;
+         
+}
+.font{
+    color:wheat;
+    font-family:serif;
+    font-size: 19px;
+}
+.row{
+    padding-top: 15px;
+}
