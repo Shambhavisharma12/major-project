@@ -10,6 +10,10 @@ export class AfterloginhomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
+   
+
   }
+
 
 }
