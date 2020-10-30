@@ -13,7 +13,7 @@
         </li>
       </ul>
     <span class="navbar-text  dot " style="color:rgb(245, 231, 231); ">
-        <a ><i class="fa fa-sign-in margin-right:5px"></i> Login </a>
+        <a data-toggle="modal" data-target="#exampleModal" ><i class="fa fa-sign-in margin-right:5px"></i> Login </a>
     </span>
       
     </div>
@@ -29,7 +29,7 @@
                         We simplified car <span class="fa fa-car"></span> rentals, so you can focus on what's important to you.</h4>
                   </div>
               </div>
-              <button class="sambutton"  routerLink="/formsignup">SignUp</button>
+              <button class="sambutton"   data-toggle="modal" data-target="#exampleModal" >SignUp</button>
           </div>
           <div class="container1">
             <div class=" text-block">
@@ -143,7 +143,69 @@
     </div>
     
  
-  
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered ">
+        <div class="modal-content">
+          <div class="modal-body image3">
+            <div class="form">
+              <div class="tab-header">
+                <div class="active">Sign Up</div>
+                <div>Sign In</div>
+              </div>
+              <div class="tab-content">
+                <div class="tab-body active">
+                  <div class="form-element">
+                   <i class="fa fa-user fa-2x cust" aria-hidden="true" ></i> 
+                   <input  type="text" name="fname" placeholder="First & Last Name" required  style="padding-left: 38px;">
+                  </div>
+                  <div class="form-element">
+                    <i class="fa fa-envelope fa-2x cust" aria-hidden="true" ></i>
+                    <input input type="email" name="email" placeholder="Email" required style="padding-left: 38px;">
+                  </div>
+                  <div class="form-element">
+                    <i class="fa fa-lock fa-2x cust" aria-hidden="true" ></i>
+                    <input  type="password" name="password" placeholder="Password" required style="padding-left: 38px;">
+                  </div>
+                  <div class="form-element">
+                    <i class="fa fa-address-book fa-2x cust" aria-hidden="true" ></i>
+                    <input type="text" name="Number" placeholder="Contact Number" required style="padding-left: 38px;">
+                  </div>
+                  <div class="form-element">
+                    <button type="submit"  style="width: 48%; margin-right: 14px; border: 2px solid rgb(250, 201, 231); background-color:rgb(54, 0, 50, 0.349);" value="Signin">Sign Up</button>
+                  <button type="button"  style="color: rgb(252, 252, 252); border: 2px solid rgb(250, 201, 231); width: 48%;  background-color:rgb(54, 0, 50, 0.349); " data-dismiss="modal">Cancle</button>
+                  </div>
+                </div>
+                
+                <div class="tab-body">
+                  <div class="form-element">
+                    <i class="fa fa-envelope fa-2x cust" aria-hidden="true" ></i>
+                    <input input type="email" name="email" placeholder="Email / username" required style="padding-left: 38px;">
+                  </div>
+                  <div class="form-element">
+                    <i class="fa fa-lock fa-2x cust" aria-hidden="true" ></i>
+                    <input  type="password" name="password" placeholder="Password" required style="padding-left: 38px;">
+                    
+                  </div>
+                  <div class="form-element">
+                    <input type="checkbox" id="remember_me">
+                    <label for="remember_me" style="color:white ;">Remember me</label>
+                  </div>
+                  <div class="form-element">
+                    <button type="submit"  style="width: 48%; margin-right: 14px; border: 2px solid rgb(250, 201, 231); background-color:rgba(54, 0, 50, 0.349);" value="Signin">Sign In</button>
+                  <button type="button" style="color: rgb(252, 252, 252); border: 2px solid rgb(250, 201, 231); width: 48%;  background-color:rgb(54, 0, 50, 0.349); " data-dismiss="modal">Cancle</button>
+                  </div>
+                  
+            
+                </div>
+              </div>
+    
+              </div>
+                  
+         </div>
+         
+        </div>
+      </div>
+    </div>
   
   
     <footer class="footer" style="background-color:rgba(32, 32, 32, 0.726);  color: rgb(250, 229, 233); padding-top: 40px; padding-bottom: 10px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
