@@ -87,9 +87,7 @@
         
         
       }
-    .heart{
-        color:red;
-    }
+   
      
       
       .bg{
@@ -165,7 +163,9 @@
         font-family:serif
       }
       
-     
+      .heart{
+        color:red;
+    }
 
     .carousel {
        /* background:rgb(238, 194, 177);*/
@@ -274,7 +274,7 @@
       }
      
 @import url('https://fonts.googleapis.com/css?family=El+Messiri');
-html {
+/* html {
     box-sizing: border-box;
 }
 html *, html *:after, html *:before {
@@ -297,7 +297,7 @@ body::before {
     bottom: 0;
     background: url('https://images2.imgbox.com/79/66/q4b8r0hu_o.jpg') 0 0/cover no-repeat;
     z-index: -1;
-}
+} */
 .card {
     position: relative;
     max-width: 60.5em;

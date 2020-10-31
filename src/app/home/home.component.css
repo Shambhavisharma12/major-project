@@ -294,7 +294,7 @@
       .form .tab-header > div.active {
       background:rgba(54, 0, 50, 0.678);
       color:rgb(253, 253, 253);
-      box-shadow:5px 5px 5px 5px rgba(97, 79, 97, 0.63)
+      box-shadow:5px 5px 5px 5px rgba(97, 79, 97, 0.733)
       }
       .form .tab-content {
       padding:20px;
@@ -348,7 +348,7 @@
         color: rgb(65, 64, 64);
       }
       .image3{
-        background-image: url('/assets/images/12.jpg');
+        background-image: url('/assets/images/12345.jpg');
         background-repeat: no-repeat; 
         background-size: cover;
       
