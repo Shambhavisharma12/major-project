@@ -1,0 +1,448 @@
+.image{
+  background-image: url('/assets/images/p.jpg');
+   background-repeat: no-repeat; 
+   background-size: cover;
+   
+
+}
+
+  .section-bg
+{
+    background: rgba(235, 234, 232, 0.466);
+    padding: 60px 0;
+}
+
+.container{
+  position: relative;
+}
+.single-product
+{
+    box-shadow: inset -2px -2px 8px rgb(102, 102, 102),
+    inset -2px -2px 12px rgba(255,255,255,0.5),
+    inset 2px 2px 4px rgba(255,255,255,0.1),
+    inset 2px 2px 8px rgba(0,0,0,0.15);
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 50px;
+    padding-right: 12px;
+    padding-top: 18px;
+    padding-left: 12px;
+}
+.single-product .product-thumb
+{
+    margin-bottom: 8px;
+}
+img
+{ display: inline-block;
+    width: 100%;
+
+    
+}
+
+.single-product:hover
+{
+    box-shadow:-2px -2px 8px rgb(238, 178, 178),
+          -2px -2px 12px rgba(255,255,255,0.5),
+    inset 2px 2px 4px rgba(255,255,255,0.1),
+          2px 2px 8px rgba(0,0,0,0.15); 
+}
+
+.product-btns
+{
+    display: flex;
+    justify-content: center;
+}
+
+a
+{
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+    color: #292929;
+}
+
+.card .card-body{
+  visibility: hidden;
+  transform:translateY(-150px) ;
+  height:0px;
+  padding-bottom: 0px;
+}
+.card:hover .card-body{
+  visibility:visible;
+  transform: translateY(-10px);
+  transition: .6s;
+  height:auto;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: rgb(51, 50, 50);
+}
+ .card-body .single-product .product-title
+{
+    margin-bottom: 5px;
+    text-align: center;
+    align-items: center;
+}
+ .card-body .single-product .product-title h5
+{
+    font-family: "Didact Gothic",sans-serif;
+}
+ .card-body .single-product .product-title h5 a
+{
+    color: #292929;
+    text-decoration: none;
+}
+ .card-body .single-product .product-title h5 a:hover
+{
+    color:#7289ab
+}
+
+
+.list-group button:hover{
+  box-shadow: -2px -2px 8px rgb(222, 241, 187),
+     -2px -2px 12px rgb(241, 187, 187),
+    inset 2px 2px 4px rgba(240, 191, 191, 0.1),
+     2px 2px 8px rgba(252, 189, 189, 0.15);
+     color: #3002fc;
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     font-size: large;
+}
+/****************buttons************/
+
+.btn-small
+{
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 8px 32px;
+    border-radius: 50px;
+    box-shadow:inset -2px -2px 8px white,
+    inset -2px -2px 12px rgba(255,255,255,0.5),
+    inset 2px 2px 4px rgba(255,255,255,0.1),
+    inset 2px 2px 8px rgba(0,0,0,0.15);
+    transition: 0.4s;
+}
+
+.btn-round
+{
+    display: inline-block;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 50%;
+    text-decoration: none;
+    box-shadow: -2px -2px 8px white,
+     -2px -2px 12px rgba(255,255,255,0.5),
+    inset 2px 2px 4px rgba(255,255,255,0.1),
+     2px 2px 8px rgba(0,0,0,0.15);
+
+}
+.btn-small:hover
+{
+    box-shadow: -2px -2px 8px white,
+     -2px -2px 12px rgba(255,255,255,0.5),
+    inset 2px 2px 4px rgba(255,255,255,0.1),
+     2px 2px 8px rgba(0,0,0,0.15);
+     color: #7289ab;
+     text-decoration: none;
+}
+.btn-round:hover
+{
+    box-shadow:inset -2px -2px 8px rgb(255, 192, 192),
+    inset -2px -2px 12px rgba(255,255,255,0.5),
+    inset 2px 2px 4px rgba(255,255,255,0.1),
+    inset 2px 2px 8px rgba(0,0,0,0.15);
+    color: #7289ab;
+}
+
+.button-center
+{
+    justify-content: center;
+    text-align: center;
+}
+
+.bttn-def
+{
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 14px 42px;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: -2px -2px 8px white,
+     -2px -2px 12px rgba(255,255,255,0.5),
+    inset 2px 2px 4px rgba(255,255,255,0.1),
+     2px 2px 8px rgba(0,0,0,0.15);
+     transition: 0.4s;
+     font-family:"Didact Gothic", sans-serif ;
+
+}
+
+.bttn-def:hover
+{
+    color: #7289ab;
+    box-shadow:inset -2px -2px 8px white,
+    inset -2px -2px 12px rgba(255,255,255,0.5),
+    inset 2px 2px 4px rgba(255,255,255,0.1),
+    inset 2px 2px 8px rgba(0,0,0,0.15);
+     color: #7289ab;
+}
+.bttn-def:hover span
+{
+    display: inline-block;
+    transform: scale(0.98);
+}
+
+.header {
+  position: absolute;
+
+  top: -170px;
+  left: -103px;
+ width: 19em;
+ height: 60em;
+ /* background-image: url('/assets/images/blackcar.jpg');
+ opacity: 0.3;
+ background-repeat: no-repeat; 
+ background-size: cover;
+background-position: center; */
+
+ 
+
+ 
+}
+
+/*********************************************/
+ .hoverable12 {
+  display: inline-block;
+  backface-visibility: hidden;
+  vertical-align: middle;
+  position: relative;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  transform: translateZ(0);
+  transition-duration: 0.3s;
+  transition-property: transform;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.hoverable12:before {
+  position: absolute;
+  pointer-events: none;
+  z-index: -1;
+  content: '';
+  top: 100%;
+  left: 5%;
+  height: 10px;
+  width: 90%;
+  opacity: 0;
+  background: -webkit-radial-gradient(center, ellipse, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 80%);
+  background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 80%);
+  transition-duration: 0.3s;
+  transition-property: transform, opacity;
+}
+.hoverable12:hover, .hoverable12:active, .hoverable12:focus {
+  transform: translateY(-5px);
+}
+.hoverable12:hover:before, .hoverable12:active:before, .hoverable12:focus:before {
+  opacity: 1;
+  transform: translateY(-5px);
+} 
+
+nav {
+  background: rgb(24, 24, 24);
+  color: rgb(253, 231, 234);
+  text-transform: uppercase;
+}
+
+nav li a {
+  transition: 0.5s color ease-in-out;
+}
+/**************************/
+.dot {
+  height: 35px;
+  width: 85px;
+  background-color: rgba(15, 15, 15, 0.884);
+  border-radius: 30px;
+  display: inline-block;
+  text-align: center;
+  margin-top: 3px;
+  
+   }
+/****************************************/
+
+
+
+.footer-distributed{
+	background:rgb(24, 24, 24);
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Open Sans', cursive;
+	margin: 0;
+}
+
+.footer-distributed h3 span{
+	color:  lightseagreen;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+  font-weight:400;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  rgb(185, 182, 182);
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #878a8daf;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+  font-weight:400;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  lightseagreen;
+	text-decoration: none;;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #878a8daf;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+.carousel-item{
+  height: 300px;
+  border: 1px solid black;
+}
+
+.carousel-item img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 300px;
+}
+

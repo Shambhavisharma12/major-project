@@ -87,7 +87,48 @@
         
         
       }
-   
+      .hoverable12 {
+        display: inline-block;
+        backface-visibility: hidden;
+        vertical-align: middle;
+        position: relative;
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        transform: translateZ(0);
+        transition-duration: 0.3s;
+        transition-property: transform;
+        
+      }
+      .hoverable12:before {
+        position: absolute;
+        pointer-events: none;
+        z-index: -1;
+        content: '';
+        top: 100%;
+        left: 5%;
+        height: 10px;
+        width: 90%;
+        opacity: 0;
+        background: -webkit-radial-gradient(center, ellipse, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 80%);
+        background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 80%);
+        transition-duration: 0.3s;
+        transition-property: transform, opacity;
+      }
+      .hoverable12:hover, .hoverable12:active, .hoverable12:focus {
+        transform: translateY(-5px);
+      }
+      .hoverable12:hover:before, .hoverable12:active:before, .hoverable12:focus:before {
+        opacity: 1;
+        transform: translateY(-5px);
+      } 
+      
+      nav {
+       
+        text-transform: uppercase;
+      }
+      
+      nav li a {
+        transition: 0.5s color ease-in-out;
+      }
      
       
       .bg{
@@ -97,7 +138,7 @@
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
       }
       .bg.scrolled{
-        background-color: rgba(32, 32, 32, 0.726);
+        background-color: rgba(32, 32, 32, 0.938);
          color: rgb(253, 231, 234) !important;
          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
       }
@@ -274,30 +315,7 @@
       }
      
 @import url('https://fonts.googleapis.com/css?family=El+Messiri');
-/* html {
-    box-sizing: border-box;
-}
-html *, html *:after, html *:before {
-    box-sizing: inherit;
-}
-body {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    line-height: 1.6;
-    font-family: 'El Messiri', sans-serif;
-}
-body::before {
-    content: ' ';
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url('https://images2.imgbox.com/79/66/q4b8r0hu_o.jpg') 0 0/cover no-repeat;
-    z-index: -1;
-} */
+
 .card {
     position: relative;
     max-width: 60.5em;
@@ -341,7 +359,7 @@ body::before {
 }
 .card--14:hover {
     background-color: transparent;
-    background-image: url(https://images2.imgbox.com/e7/52/l0IUqJ7y_o.jpg);
+    background-image: url(/assets/images/i.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -361,4 +379,163 @@ body::before {
 .card--14:hover .card__img {
     opacity: 0;
     transform: scale(0);
+}
+/*************************************footer********************/
+.footer-distributed{
+	background:rgb(24, 24, 24);
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Open Sans', cursive;
+	margin: 0;
+}
+
+.footer-distributed h3 span{
+	color:  lightseagreen;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+  font-weight:400;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  rgb(185, 182, 182);
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #878a8daf;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+  font-weight:400;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  lightseagreen;
+	text-decoration: none;;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #878a8daf;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
 }

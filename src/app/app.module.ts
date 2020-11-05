@@ -10,7 +10,9 @@ import { LoginComponent } from './login/login.component';
 import { AfterloginhomeComponent } from './afterloginhome/afterloginhome.component';
 
 import { ReactiveFormsModule } from '@angular/forms';
-import { RegistrationComponent } from './registration/registration.component'
+import { RegistrationComponent } from './registration/registration.component';
+import { DetailedpageComponent } from './detailedpage/detailedpage.component';
+import { ContactComponent } from './contact/contact.component'
 
 @NgModule({
   declarations: [
@@ -22,7 +24,11 @@ import { RegistrationComponent } from './registration/registration.component'
     LoginComponent,
     AfterloginhomeComponent,
     
-    RegistrationComponent
+    RegistrationComponent,
+    
+    DetailedpageComponent,
+    
+    ContactComponent
   ],
   imports: [
     BrowserModule,

@@ -1,29 +1,33 @@
-
-<nav class="navbar  navbar-expand-sm  fixed sticky-top  bg"  >
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <h4 style=" font-weight:bolder; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;" routerLink="/home"> DRIVE YOUR CAR</h4>
-      <ul class="navbar-nav ml-auto" >
-        <li class="nav-item">
-          <a class="nav-link "  style="color:whitesmoke;"><span class="fa fa-info fa-lg"></span>ABOUTUS</a>
+<nav class="navbar  navbar-expand-sm  fixed sticky-top bg"  >
+  <button class="navbar-toggler" style="background-color: antiquewhite;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span  style="color: black;" class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse " id="navbarSupportedContent">
+    <h4  style=" margin-top: 8px; margin-bottom: 8px; margin-left:35px ; font-weight:bolder; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;" routerLink="/home">DRIVE YOUE CAR</h4>
+     <ul class="nav navbar-nav ml-auto">
+      <li class="nav-item" >
+          <a  id="#1"  (mouseover)="changetext()" (mouseout)="dt()" class="hoverable12 nav-link" style="color:whitesmoke;"><span class="fa fa-home "></span></a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link " style="color:whitesmoke;"><span class="fa fa-address-card fa-lg"></span>CONTACT</a>
+      <li class="nav-item" >
+        <a   id="#2"  (mouseover)="changetext2()" (mouseout)="dt2()" class="hoverable12 nav-link " style="color:whitesmoke;"><span class="fa fa-info "></span></a>
+      </li>
+      
+      <li class="nav-item">
+        <a  id="#3"  (mouseover)="changetext3()" (mouseout)="dt3()"   class="hoverable12 nav-link" style="color:whitesmoke;"><span class="fa fa-phone "></span></a>
+      </li>
+      <li class="nav-item" >
+        <a  id="#5"  (mouseover)="changetext5()" (mouseout)="dt5()"   class="hoverable12 nav-link" style="color:whitesmoke;"><span class="fa fa-user-plus "></span></a>
+      </li>
+      <li class="nav-item" style="padding-left:95px ;">
+          <a  id="#4"  (mouseover)="changetext4()" (mouseout)="dt4()" class="hoverable12 nav-link"  style="color:whitesmoke;"><span class="fa fa-user-circle-o "></span></a>
         </li>
-      </ul>
-      <span>
-        
-     </span>
-      <span class="navbar-text  dot " style="color:rgb(245, 231, 231); ">
-        <a ><i class="fa fa-sign-in margin-right:5px"></i> LogOut </a>
-
-    </span>
-      
-      
-    </div>
-  </nav>
+        <li class="nav-item" style=" padding-right: 30px;">
+          <a  id="#6"  (mouseover)="changetext6()" routerLink="/home" (mouseout)="dt6()" class="hoverable12 nav-link"  style="color:whitesmoke;"><span class="fa fa-power-off "></span></a>
+        </li>
+    </ul> 
+   
+   </div>
+</nav> 
 
 
     <!--******************************HEADER SECTION*****************************************-->
@@ -39,7 +43,7 @@
                           We simplified car <span class="fa fa-car"></span> rentals, so you can focus on what's important to you.</h4>
                     </div>
                 </div>
-                <button class="sambutton"  routerLink="">BOOK NOW</button>
+                <button class="sambutton"  routerLink="/detail">BOOK NOW</button>
             </div>
             <div class="container1">
               <div class=" text-block">
@@ -59,7 +63,7 @@
           <div class="row">
             <div class="container cardovercard">
               <div class="card card--14">
-                <img class="card__img" src="https://images2.imgbox.com/e7/52/l0IUqJ7y_o.jpg" alt="">
+                <img class="card__img" src="/assets/images/i.jpg" alt="">
                 <p class="card__text">Fill the give form ,while filling the form  remember that evey information provided by you should be correct.
               </p>
                 <button class="card__btn" routerLink="/regist" class="" data-toggle="modal" data-target="#staticBackdrop"
@@ -173,52 +177,71 @@
     </div>
     </div> 
   </div>
+  <footer class="footer-distributed" >
+
+    <div class="footer-left">
+  
+      <h3>Drive Your <span>Car</span></h3>
+  
+      <p class="footer-links">
+        <a href="#" class="link-1">Home</a>
+        
+        <a href="#">Register</a>
+      
+        <a href="#">Pricing</a>
+      
+        <a href="#">About</a>
+        
+        <a href="#">Contact</a>
+      </p>
+  
+      <p class="footer-company-name">Drive Your Car © 2020</p>
+    </div>
+  
+    <div class="footer-center">
+  
+      <div>
+        <i class="fa fa-map-marker"></i>
+        <p><span>Madhvan nagar Bheriya jadjad jablpur road sagar</span> Madhay Pradesh, India</p>
+      </div>
+  
+      <div>
+        <i class="fa fa-phone"></i>
+        <p>9926449654</p>
+      </div>
+  
+      <div>
+        <i class="fa fa-envelope"></i>
+        <p><a href="mailto:support@company.com">driveyourcar@gmail.com</a></p>
+      </div>
+  
+    </div>
+  
+    <div class="footer-right">
+  
+      <p class="footer-company-about">
+        <span>About Drive your car services</span>
+        Drive your car provides car at rent in very low cost .our service is feasible for eveyone. our staring price is just only 75/- :)
+      </p>
+  
+      <div class="footer-icons">
+  
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-google-plus"></i></a>
+        <a href="#"><i class="fa fa-envelope-o"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        <a href="#"><i class="fa fa-github"></i></a>
+  
+      </div>
+  
+    </div>
+  
+  </footer>
+  
   
 
 
 
 
-  <footer class="footer" style="background-color:rgba(32, 32, 32, 0.726);  color: rgb(250, 229, 233);  padding-top: 40px; padding-bottom: 10px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
-    <div class="container" >
-        <div class="row ">             
-            <div class="col-4 offset-1 col-sm-2">
-                <h5> Links</h5>
-                <ul class="list-unstyles">
-                    <li><a routerLink="/home">Home</a></li>
-                    <li><a href="#">AboutUs</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-            <div class="col-7 col-sm-5">
-                <h5>Our Address</h5>
-                <address>
-              121, Clear Water Bay Road<br>
-              Clear Water Bay, sagar<br>
-              India<br><br>
-              <i class="fa fa-phone fa-lg"></i> : 6265617596<br>
-              <i class="fa fa-fax fa-lg"></i> : 9968552364<br>
-              <i class="fa fa-envelope fa-lg"></i>: <a href="sharmashambhavi12345@gmail.com"> Driveyourcar@gami.com</a>
-           </address>
-            </div>
-            <div class="col-12 col-sm-4 align-self-center" style="color: rgb(250, 229, 233)">
-                <div class="text-center">
-                    <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google-plus"></i></a>
-                    <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook"></i></a>
-                    <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a>
-                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
-                    <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
-                    <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o"></i></a>
-                </div>
-                
-            </div>
-       </div>
-       <div class="row justify-content-center">             
-            <div class="col-auto">
-                <p>© Copyright 2021 Drive Your Car</p>
-            </div>
-       </div>
-    </div>
-</footer>
-
-
-
+  

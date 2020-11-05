@@ -7,7 +7,8 @@ import { HomeComponent } from './home/home.component';
 import { AfterloginhomeComponent } from './afterloginhome/afterloginhome.component';
 
 import { RegistrationComponent } from './registration/registration.component'
-
+import { DetailedpageComponent } from './detailedpage/detailedpage.component'
+import { ContactComponent } from './contact/contact.component' 
 
 const routes: Routes = [
   { path: 'login',  component: LoginComponent },
@@ -16,6 +17,12 @@ const routes: Routes = [
   {  path: '', redirectTo: '/home', pathMatch: 'full'},
   {
     path : 'after' , component : AfterloginhomeComponent
+  },
+  {
+    path:'detail', component:DetailedpageComponent
+  },
+  {
+    path:'contact', component: ContactComponent
   }
 ];
 

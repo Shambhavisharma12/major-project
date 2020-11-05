@@ -1,18 +1,19 @@
 import { Component, OnInit } from '@angular/core';
+import * as $ from "jquery";
 
 @Component({
-  selector: 'app-afterloginhome',
-  templateUrl: './afterloginhome.component.html',
-  styleUrls: ['./afterloginhome.component.css']
+  selector: 'app-contact',
+  templateUrl: './contact.component.html',
+  styleUrls: ['./contact.component.css']
 })
-export class AfterloginhomeComponent implements OnInit {
+export class ContactComponent implements OnInit {
 
   constructor() { }
 
   ngOnInit(): void {
-
-   
-
+    // $(window).scroll(function(){
+    //   $('nav').toggleClass("scrolled",$(this).scrollTop()<55);
+    // })
   }
   changetext(){
     document.getElementById("#1").innerHTML="Home";
@@ -22,14 +23,14 @@ export class AfterloginhomeComponent implements OnInit {
    document.getElementById('#1').innerHTML="<span class='fa fa-home'></span>"
   }
   changetext2(){
-   document.getElementById("#2").innerHTML="About us";
+   document.getElementById("#2").innerHTML="About";
   
  }
  dt2(){
   document.getElementById('#2').innerHTML="<span class='fa fa-info'></span>"
  }
  changetext3(){
-   document.getElementById("#3").innerHTML="Contact us";
+   document.getElementById("#3").innerHTML="Contact";
   
  }
  dt3(){
@@ -56,6 +57,4 @@ export class AfterloginhomeComponent implements OnInit {
   dt6(){
     document.getElementById('#6').innerHTML="<span class='fa fa-power-off'></span>"
    }
- 
-
 }
